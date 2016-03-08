@@ -204,6 +204,8 @@ if !hasmapto('<Plug>vimdictive_filter_rhyme')
 endif
 
 " Commands: {{{1
+command! -nargs=1 Dict :call PreviewTerm("Meanings", <q-args>)
+command! -nargs=1 Thesaur :call PreviewTerm("Thesaurus", <q-args>)
 
 " Teardown:{{{1
 "reset &cpo back to users setting
